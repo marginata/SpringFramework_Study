@@ -1,0 +1,9 @@
+@Controller --> 해당 클래스를 스프링의 빈으로 인식하도록 하기 위함
+@RequestMapping("/board/*") --> /board로 시작하는 모든 처리를 BoardController.java가 하도록 지정하는 역할
+public class BoardController {
+	
+}
+
+* 스프링 빈(Bean)
+Spring IoC 컨테이너가 관리하는 자바 객체
+ApplicationContext.getBean()으로 얻어질 수 있는 객체
