@@ -1,0 +1,11 @@
+com.bp.mapper 패키지에 BoardMapper.java 인터페이스 생성
+
+게시판 등록 쿼리를 요청하는 enroll() 메서드 코드를 작성
+  public void enroll(BoardVO board);
+  
+src/main/resources 경로에 있는 com/bp/mapper 폴더에 BoardMapper.xml 파일 생성
+
+xml파일을 mapper로서의 기능을 하도록 만들기 위해 아래와 같이 작성
+* 중요한 것은 namespace 속성 값을 Mapper인터페이스의 경로를 포함하는 인터페이스의 이름을 작성해야 한다는 점
+* namespace 속성값이 중요한 이유는 마이바티스가 Mapper인터페이스와 XML을 인터페이스 이름과 namespace 속성 값을 가지고 판단하기 때문
+* 인터페이스 이름과 namespace 속성값이 동일한 이름이면 이를 병합해서 처리하는데, 이러한 경우에는 메서드 선언은 인터페이스에 존재하고 SQL에 대한 처리는 XML을 이용함
